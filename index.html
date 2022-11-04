@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Periodic Table</title>
+    <link rel="stylesheet" href="index.css" />
+     <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script> 
+  </head>
+  <body>
+    <div class="err" id="err">
+      </div>
+    <nav class="search-nav" id="nav">
+      <h3 class="head" id="head">Periodic table</h3>
+      <div class="search">
+        <div class="search-in-1 shadow">
+          <select name="select" id="sel" class="inpts" style="width: 30%">
+            <option class="opt" value="categ">Category</option>
+            <option class="opt" value="number">Atomic no</option>
+            <option class="opt" value="symbol">Symbol</option>
+            <option class="opt" value="name">Element name</option>
+            <option class="opt" value="mass">Mass no</option>
+            <option class="opt" value="elect">Electronic configuration</option>
+          </select>
+
+          <input
+            id="inpts-1"
+            class="inpts"
+            style="width: 50%"
+            type="number"
+            placeholder="Enter your value"
+          />
+                    <button id="btn" onclick="btn()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+              />
+            </svg>
+          </button>
+        </div>
+        </div>
+    </nav>
+
+    <div id="nf" class="nf"></div>
+    <div id="main" class="main"></div>
+    <div id="second" class="second"></div>
+    <div class="footer">
+      <p>Periodic table All Right Reserved <br> Yahya saad</p>
+    </div>
+    <script src="./index.js"></script>
+    	  <script type="module"
+		  src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+	  </script>
+
+	<!-- Loads <model-viewer> for old browsers like IE11: -->
+	<script nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+	</script>
+  </body>
+</html>

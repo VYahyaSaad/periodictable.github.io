@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.shadow {
+  -webkit-box-shadow: 0px 0px 7px -1px rgba(204, 204, 204, 1);
+  -moz-box-shadow: 0px 0px 7px -1px rgba(204, 204, 204, 1);
+  box-shadow: 0px 0px 7px -1px rgba(204, 204, 204, 1);
+}
+/* nav searchs */
+
+.search {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+}
+.search-in-1 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 10px 10%;
+}
+.search-nav{
+  margin-top: -10px;
+  /* position: fixed; */
+  background-color: white;
+}
+#btn{
+  border: none;
+  background-color: white;
+  outline: none;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+.ntf{
+  width: 300px;
+  height: 300px;
+}
+.ntf-div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.opt{
+  border: none;
+  outline: none;
+  border-radius: 2px;
+}
+.inpts {
+  padding: 10px 10px;
+  border-radius: 3px;
+  border: none;
+  font-size: 15px;
+  margin: 2px;
+  display: inline-block;
+  margin: 5px;
+  outline: none;
+}
+.head {
+  font-size: x-large;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+/* boxes */
+.main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 3%;
+  /* margin-top: 10%; */
+}
+@media (max-width: 800px) {
+  .main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+.search-in-1 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 10px 5%;
+}
+}
+.prid-box {
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 130px;
+  min-width: 130px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0px 0px 7px -1px rgba(204, 204, 204, 1);
+  -moz-box-shadow: 0px 0px 7px -1px rgba(204, 204, 204, 1);
+  box-shadow: 0px 0px 7px -1px rgba(204, 204, 204, 1);
+}
+.prid-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prid-ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.prod-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+
+}
+.back{
+  background-color: rgb(0, 0, 0);
+  border: none;
+  outline: none;
+  position: fixed;
+  top:90%;
+  display: flex;
+  justify-content: space-between;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 5px;
+  align-items: center;
+  cursor: pointer;
+}
+.back-img{
+  color: white;
+  margin-right: 5px;
+}
+.back-head{
+  color: white;
+  font-size: 11px;
+  margin-right: 5px;
+  
+}
+.prid-second {
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 70px;
+  min-width: 70px;
+  -webkit-box-shadow: 0px 0px 7px -1px rgba(204, 204, 204, 1);
+  -moz-box-shadow: 0px 0px 7px -1px rgba(204, 204, 204, 1);
+  box-shadow: 0px 0px 7px -1px rgba(204, 204, 204, 1);
+  margin-left: 5%;
+}
+
+.prid-in-main{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.prid-in-con{
+  margin-bottom: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.txt-head{
+  text-align: center;
+  color: grey;
+  
+}
+.txt-tail{
+  text-align: center;
+  margin-top: -2px;
+  margin-bottom: 5%;
+}
+#sel{    background:none;
+    -webkit-appearance: none;
+    border: 0;
+}
+
+/* footer */
+.footer {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-align: center;
+}
+model-viewer{
+  width: 100%;
+  margin-bottom: 5%;
+  height: 240px;
+}
+.err{
+  position: fixed;
+  text-align: center;
+  top: 90%;
+  width: 100%;
+}
+.err-head{
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  margin: 0px 10%;
+  color: white;
+  font-size: 14px;
+  padding: 10px 0px;
+}
